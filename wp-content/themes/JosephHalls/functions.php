@@ -4,7 +4,7 @@ function my_theme_setup() { // my_theme_setup() is hooked to the after_setup_the
     /*
     The purpose of functions.php
     functions.php serves as the main entry point where you include other PHP files that contain different pieces of logic or functionality. This centralizes the management of theme features and functionalities, making it easier to understand the theme’s overall structure.
-Initialization: It’s the file where you typically initialize and hook in theme features, custom functionalities, and external scripts or styles.
+    Initialization: It’s the file where you typically initialize and hook in theme features, custom functionalities, and external scripts or styles.
     */
 
     // Add support for block styles.
@@ -49,9 +49,15 @@ Initialization: It’s the file where you typically initialize and hook in theme
     // IMPORTANT - This enables support for Full Site Editing (FSE) using block-based templates. When enabled, the theme can use .html files (like index.html, single.html, page.html) in the templates/ folder to define the overall structure of the site using blocks.
 }
 
+function enqueue_custom_styles() {
+    wp_enqueue_style('custom-styles', get_template_directory_uri() . '/custom-styles.css');
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_styles');
+
 // Hook the setup function to 'after_setup_theme'.
 add_action('after_setup_theme', 'my_theme_setup');
 // This line hooks the my_theme_setup function to the after_setup_theme action. This action hook runs after the theme is initialized but before any templates are loaded. It’s the recommended place to add theme setup functions.
+
 
 
 ?>
