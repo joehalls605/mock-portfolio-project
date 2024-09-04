@@ -153,7 +153,249 @@ p {
 
 /* Style the images within list items */
 .wp-block-group ul li img {
-    width: 40px; /* Adjust width as needed */
+    width: 20px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove any extra space below the image */
 }
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.wp-block-group.alignfull {
+    padding: 20px;
+}
+
+.wp-block-site-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+
+.wp-block-site-title a {
+    text-decoration: none;
+}
+
+.wp-block-navigation {
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Main Content Styles */
+main.wp-block-group {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    display: block; /* Changed from flex to block to stack elements vertically */
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Social Icons */
+.wp-block-social-links.is-style-logos-only.has-large-icon-size {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.wp-block-social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Buttons */
+.wp-block-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.wp-block-button__link {
+    background-color: #087ea4;
+    color: #ffffff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wp-block-button__link:hover {
+    background-color: #065c7c;
+}
+
+.secondary-button .wp-block-button__link {
+    background-color: transparent;
+    border: 2px solid #087ea4;
+    color: #087ea4;
+}
+
+.secondary-button .wp-block-button__link:hover {
+    background-color: #087ea4;
+    color: #000000;
+}
+
+/* Profile Image */
+.profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer Styles */
+.wp-block-group.has-dark-gray-background-color {
+    padding: 20px;
+    color: #000000;
+}
+
+.wp-block-group.has-dark-gray-background-color p {
+    color: #000000;
+}
+
+/* Social Links in Footer */
+.wp-block-social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-social-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Remove default list styling */
+.wp-block-group ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use Flexbox to align items horizontally */
+    gap: 10px; /* Adjust spacing between items */
+}
+
+/* Style the list items */
+.wp-block-group ul li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the images within list items */
+.wp-block-group ul li img {
+    width: 30px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
+}
+
+/* Product Highlights Section */
+.product-highlights {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+}
+
+.product-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000; /* Black text for the main heading */
+}
+
+.product-highlights .wp-block-columns {
+    display: flex;
+    gap: 20px; /* Adds space between columns */
+}
+
+.product-highlights .wp-block-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for each column */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.product-highlights h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000; /* Black text for product names */
+}
+
+.product-highlights p {
+    font-size: 16px;
+    color: #333333; /* Dark gray text for descriptions */
+}
+
+.read-more {
+    display: inline-block;
+    color: #087ea4; /* Blue color for "Read More" links */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+    background-color: #e0e0e0; /* Light gray background */
+    padding: 40px 20px; /* Padding around the content */
+    text-align: center; /* Center align the text */
+    margin-top: 40px; /* Space above the CTA section */
+}
+
+.call-to-action h2 {
+    font-size: 36px; /* Heading size */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #000000; /* Black text color */
+}
+
+.call-to-action p {
+    font-size: 18px; /* Paragraph text size */
+    color: #333333; /* Dark gray text color */
+    margin-bottom: 20px; /* Space below the paragraphs */
+}
+
+.call-to-action .wp-block-button__link {
+    background-color: #087ea4; /* Button background color */
+    color: #ffffff; /* Button text color */
+    padding: 12px 30px; /* Padding inside the button */
+    text-decoration: none; /* Remove underline from the button text */
+    border-radius: 5px; /* Rounded corners for the button */
+    font-weight: bold; /* Bold button text */
+}
+
+.call-to-action .wp-block-button__link:hover {
+    background-color: #065c7c; /* Darker button background on hover */
+}
+
