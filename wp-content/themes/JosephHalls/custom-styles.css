@@ -1,8 +1,8 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1b1b1b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
 }
 
 .wp-block-site-title a {
@@ -25,7 +25,7 @@ body {
 
 .wp-block-navigation {
     font-size: 16px;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Main Content Styles */
@@ -33,31 +33,24 @@ main.wp-block-group {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: block; /* Changed from flex to block to stack elements vertically */
 }
 
-/* Hero Section */
-h1, h2 {
+h1, h2, p {
     margin-bottom: 20px;
+    color: #000000;
 }
 
 h1 {
     font-size: 48px;
-    color: #ffffff;
 }
 
 h2 {
     font-size: 36px;
-    color: #ffffff;
 }
 
 p {
     font-size: 18px;
-    margin-bottom: 20px;
-    color: #d1d1d1;
 }
 
 /* Social Icons */
@@ -76,6 +69,8 @@ p {
 /* Buttons */
 .wp-block-buttons {
     margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }
 
 .wp-block-button__link {
@@ -84,18 +79,22 @@ p {
     padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
-    margin-right: 10px;
     font-weight: bold;
+}
+
+.wp-block-button__link:hover {
+    background-color: #065c7c;
 }
 
 .secondary-button .wp-block-button__link {
     background-color: transparent;
     border: 2px solid #087ea4;
+    color: #087ea4;
 }
 
 .secondary-button .wp-block-button__link:hover {
     background-color: #087ea4;
-    color: #ffffff;
+    color: #000000;
 }
 
 /* Profile Image */
@@ -115,5 +114,46 @@ p {
 /* Footer Styles */
 .wp-block-group.has-dark-gray-background-color {
     padding: 20px;
+    color: #000000;
+}
+
+.wp-block-group.has-dark-gray-background-color p {
+    color: #000000;
+}
+
+/* Social Links in Footer */
+.wp-block-social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-social-link {
     color: #ffffff;
+    text-decoration: none;
+}
+
+/* Remove default list styling */
+.wp-block-group ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use Flexbox to align items horizontally */
+    gap: 10px; /* Adjust spacing between items */
+}
+
+/* Style the list items */
+.wp-block-group ul li {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the images within list items */
+.wp-block-group ul li img {
+    width: 40px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra space below the image */
 }
