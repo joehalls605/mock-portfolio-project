@@ -399,3 +399,49 @@ p {
     background-color: #065c7c; /* Darker button background on hover */
 }
 
+/* Style images within the certification-highlights section */
+.certification-highlights img {
+    width: 50px; /* Set the width to 50px */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Ensure there is no extra space below the image */
+    margin-top: 10px; /* Optional: Add some space above the image */
+    margin-bottom: 10px; /* Optional: Add some space below the image */
+}
+
+/* Additional styles for certification-highlights section */
+.certification-highlights {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+}
+
+.certification-highlights h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000; /* Black text for the main heading */
+}
+
+.certification-highlights .wp-block-columns {
+    display: flex;
+    gap: 20px; /* Adds space between columns */
+}
+
+.certification-highlights .wp-block-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for each column */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.certification-highlights h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000; /* Black text for certification names */
+}
+
+.certification-highlights p {
+    font-size: 16px;
+    color: #333333; /* Dark gray text for descriptions */
+}
+
+
