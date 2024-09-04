@@ -1,40 +1,75 @@
 {
-    "version": 2,
-    "settings": {
-      "color": {
-        "palette": [
-          {
-            "slug": "primary",
-            "color": "#000000",
-            "name": "Primary"
-          },
-          {
-            "slug": "secondary",
-            "color": "#ffffff",
-            "name": "Secondary"
-          }
-        ]
-      },
-      "typography": {
-        "fontSizes": [
-          {
-            "slug": "small",
-            "size": "12px",
-            "name": "Small"
-          },
-          {
-            "slug": "regular",
-            "size": "16px",
-            "name": "Regular"
-          }
-        ]
-      }
+  "version": 2,
+  "settings": {
+    "custom": {
+      "textColor": true,      
+      "backgroundColor": true,  
+      "fontFamily": true         
     },
-    "styles": {
-      "color": {
-        "background": "#ffffff",
-        "text": "#000000"
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "color": "#0073aa",
+          "name": "Primary"
+        },
+        {
+          "slug": "secondary",
+          "color": "#005075",
+          "name": "Secondary"
+        },
+        {
+          "slug": "white",
+          "color": "#ffffff",
+          "name": "White"
+        },
+        {
+          "slug": "black",
+          "color": "#000000",
+          "name": "Black"
+        }
+      ],
+      "custom": true         
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "small",
+          "size": "12px",
+          "name": "Small"
+        },
+        {
+          "slug": "regular",
+          "size": "16px",
+          "name": "Regular"
+        },
+        {
+          "slug": "large",
+          "size": "24px",
+          "name": "Large"
+        }
+      ],
+      "customFontSize": true      
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "%"],
+      "blockGap": "1.5rem",
+      "padding": {
+        "small": "10px",
+        "medium": "20px",
+        "large": "40px"
       }
     }
+  },
+  "styles": {
+    "color": {
+      "background": "#ffffff",
+      "text": "#000000"
+    },
+    "typography": {
+      "fontFamily": "Arial, sans-serif",
+      "fontSize": "16px",
+      "lineHeight": "1.5"
+    }
   }
-  
+}

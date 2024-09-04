@@ -47,6 +47,8 @@ function my_theme_setup() { // my_theme_setup() is hooked to the after_setup_the
     // Add support for full site editing.
     add_theme_support('block-templates');
     // IMPORTANT - This enables support for Full Site Editing (FSE) using block-based templates. When enabled, the theme can use .html files (like index.html, single.html, page.html) in the templates/ folder to define the overall structure of the site using blocks.
+
+    add_theme_support( 'wp-block-style' );
 }
 
 function enqueue_custom_styles() {
